@@ -1,0 +1,2 @@
+# GPSProfiling
+GPS based Profiling app is used to silent your phone whenever it reaches a specified place like Classrooms, worship places or any other place of that matter as it detects the saved location of that particular area and it comes back to normal mode when the person leaves that place. One can also make a list of locations where he wants to silent his phone and automatically mobile will be muted using GPS. A user can also manually set the timing for a specific duration. It also has many other impressive features.
