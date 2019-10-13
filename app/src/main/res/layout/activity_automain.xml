@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gpsbasedprofiling.AutoMainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/set_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/view_schedule"
+                android:layout_alignLeft="@+id/view_schedule"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/view_schedule"
+                android:layout_alignStart="@+id/view_schedule"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:onClick="set_schedule"
+                android:text="Set schedule"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <Button
+                android:id="@+id/view_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/set_schedule"
+                android:background="@android:color/transparent"
+                android:onClick="view_schedule"
+                android:text="View Schedules"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignLeft="@+id/onetime_schedule"
+                android:layout_alignStart="@+id/onetime_schedule"
+                android:layout_alignRight="@+id/onetime_schedule"
+                android:layout_alignEnd="@+id/onetime_schedule" />
+
+            <Button
+                android:id="@+id/onetime_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_schedule"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:onClick="one_time_activity"
+                android:text="One Time Scheduler"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <Button
+                android:id="@+id/wifisilent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/onetime_schedule"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:onClick="wifisilent"
+                android:text="Wifi Silent"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <Button
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wifisilent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:onClick="help"
+                android:text="Help"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <Button
+                android:id="@+id/test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/help"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:onClick="test"
+                android:text="Test"
+                android:textColor="@android:color/holo_blue_dark"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

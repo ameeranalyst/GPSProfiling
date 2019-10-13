@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gpsbasedprofiling">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBmHjzenNPhxY3x-gt7jkLyy06-THIF_gQ" />
+
+        <activity android:name=".CompassActivity"></activity>
+        <activity android:name=".AutoMainActivity"></activity>
+        <activity android:name=".MainCalendarActivity"></activity>
+        <activity android:name=".MLocationActivity"></activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SetScheduleActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ViewScheduleActivity" android:screenOrientation="portrait" />
+
+        <receiver android:name=".ModeReceiver" />
+        <receiver android:name=".RingReceiver" />
+        <receiver android:name=".VibrateReceiver" />
+
+        <activity android:name=".TestActivity" android:screenOrientation="portrait" />
+        <activity android:name=".OneTimeActivity" android:screenOrientation="portrait" />
+
+
+        <receiver android:name=".DeviceBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".WifiBroadcastReceiver">
+            <intent-filter>
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".HelpActivity" android:screenOrientation="portrait" />
+        <activity android:name=".WifiSilentActivity" android:screenOrientation="portrait"></activity>
+
+
+        <provider
+            android:name="com.example.gpsbasedprofiling.provider.PlaceContentProvider"
+            android:authorities="com.example.gpsbasedprofiling"
+            android:exported="false"/>
+
+        <receiver android:name=".GeofenceBroadcastReceiver" />
+
+
+    </application>
+
+</manifest>

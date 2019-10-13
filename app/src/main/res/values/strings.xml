@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">GPS Based Profiling</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="compass_dial" translatable="false">Compass Dial</string>
+    <string name="compass_hands" translatable="false">Compass Hands</string>
+
+    <string name="sotw_north">N</string>
+    <string name="sotw_east">E</string>
+    <string name="sotw_south">S</string>
+    <string name="sotw_west">W</string>
+    <string name="sotw_northeast">NE</string>
+    <string name="sotw_northwest">NW</string>
+    <string name="sotw_southeast">SE</string>
+    <string name="sotw_southwest">SW</string>
+
+    <string name="add_new_location">Add new location</string>
+    <string name="location_list">Locations</string>
+    <string name="setting_enabled" translatable="false">EnabledSetting</string>
+    <string name="settings_label">Settings</string>
+    <string name="enable_geofences">Enable GPS</string>
+    <string name="location_permissions">Location Permissions</string>
+    <string name="need_location_permission">You need to enable location permission first</string>
+    <string name="location_permission_granted">Location Permission Granted</string>
+    <string name="privacy">http://www.google.com/policies/privacy</string>
+    <string name="ringer_permissions">Ringer Permissions</string>
+    <string name="silent_mode_activate">Silent Mode Activated</string>
+    <string name="touch_to_relaunch">Touch to launch the app</string>
+    <string name="back_to_normal">Back to normal</string>
+
+
+
+    <string name="sunday_code">1</string>
+    <string name="monday_code">2</string>
+    <string name="tuesday_code">3</string>
+    <string name="wednesday_code">4</string>
+    <string name="thursday_code">5</string>
+    <string name="friday_code">6</string>
+    <string name="saturday_code">7</string>
+    <string name="silent_mode">0</string>
+    <string name="vibrate_mode">1</string>
+    <string name="ringer_mode">2</string>
+    <string name="setScheduleHelpContent">Select the days you want recurring alarms via checkbox.
+    From time is the time when phone should activate vibrate mode, To time is the time when the phone will
+    be back to Normal mode.</string>
+    <string name="viewScheduleHelpContent">Here you can view your saved schedules. Select the schedule
+        and you can explore more options like deactivating, modifying or deleting that schedule.</string>
+    <string name="oneTimeHelpContent">Here you can set a non-recurring one time only schedule easily and conveniently. In one time schedule,
+        you can choose the mode i.e. Silent or vibrate. The phone will automatically activate your selected mode at the From time
+        and turn back to normal mode at To time. Currently the app
+    supports only Single one time schedule. More one-time schedules will be supported in future updates.</string>
+    <string name="oneTimeHelpCancel">To cancel, again select one time schedule and you can see your preset one time details are available there.
+    Also, there is an extra cancel button if you have a one time non-recurring schedule set. Just press the cancel button to cancel your
+     one time schedule.</string>
+
+    <string name="setRestartContent">We know that you restart your phone to optimize it and make it run better. So, the app will
+    deactivate all your schedules automatically for you. You can simply open your schedule and activate it again.</string>
+    <string name="wifisilenttitle">Phone will be automatically switched to vibrate mode on Work WiFi and Ringer mode on Home WiFi.</string>
+    <string-array name="mode">
+        <item>Vibrate</item>
+        <item>Silent</item>
+    </string-array>
+
+
+
+    <string name="hijri_date_picker_done" translatable="false">Done</string>
+    <string name="hijri_date_picker_cancel" translatable="false">Cancel</string>
+    <string name="hijri_date_picker_year" translatable="false">Year</string>
+    <string name="January" translatable="false">January</string>
+    <string name="February" translatable="false">February</string>
+    <string name="March" translatable="false">March</string>
+    <string name="April" translatable="false">April</string>
+    <string name="May" translatable="false">May</string>
+    <string name="June" translatable="false">June</string>
+    <string name="July" translatable="false">July</string>
+    <string name="August" translatable="false">August</string>
+    <string name="September" translatable="false">September</string>
+    <string name="October" translatable="false">October</string>
+    <string name="November" translatable="false">November</string>
+    <string name="December" translatable="false">December</string>
+
+    <string-array name="hijri_date_picker_days">
+        <item>SUN</item>
+        <item>MON</item>
+        <item>TUE</item>
+        <item>WED</item>
+        <item>THU</item>
+        <item>FRI</item>
+        <item>SAT</item>
+    </string-array>
+
+
+    <string name="hijri_date_picker_cancel_arabic" translatable="false">الغاء</string>
+    <string name="dhu_alhijjah" translatable="false">ذو الحجة</string>
+    <string name="hijri_date_picker_done_arabic" translatable="false">موافق</string>
+    <string name="dhu_alqadah" translatable="false">ذو القعدة</string>
+    <string name="jamada_i" translatable="false">جماد الاول</string>
+    <string name="jamada_ii" translatable="false">جماد الثاني</string>
+    <string name="muharram" translatable="false">محرم</string>
+    <string name="rabi_i" translatable="false">ربيع الاول</string>
+    <string name="rabi_ii" translatable="false">ربيع الثاني</string>
+    <string name="rajab" translatable="false">رجب</string>
+    <string name="ramadan" translatable="false">رمضان</string>
+    <string name="safar" translatable="false">صفر</string>
+    <string name="shaban" translatable="false">شعبان</string>
+    <string name="shawal" translatable="false">شوال</string>
+    <string name="hijri_date_picker_year_arabic" translatable="false">السنة</string>
+    <string-array name="hijri_date_picker_days_arabic">
+        <item>الاحد</item>
+        <item>الاثنين</item>
+        <item>الثلاثاء</item>
+        <item>الاربعاء</item>
+        <item>الخميس</item>
+        <item>الجمعة</item>
+        <item>السبت</item>
+    </string-array>
+
+    <!--<string name="calendar_confirm">Confirm</string>-->
+    <string name="date_time_header">Date and Time</string>
+
+    <string name="search" translatable="false">Search&#8230;</string>
+
+    <string name="time_text">TIME</string>
+    <string name="calendar_confirm">DONE</string>
+    <string name="header_calendar">Calendar</string>
+    <string name="calendar_cancel">Cancel</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>
